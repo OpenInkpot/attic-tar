@@ -1,4 +1,5 @@
 etc
+bin
 sbin
 usr/share/lintian/overrides
 usr/share/man/man8

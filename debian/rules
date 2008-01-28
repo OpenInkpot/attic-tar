@@ -51,6 +51,9 @@ install: build
 	install -o root -g root -m 0644 debian/tar.lintian \
 		debian/tar/usr/share/lintian/overrides/tar
 
+	install -d -m 755 debian/tar-gnu/bin
+	install -m 755 debian/tar/bin/tar debian/tar-gnu/bin/tar-gnu
+
 # Build architecture-independent files here.
 binary-indep: build install
 
